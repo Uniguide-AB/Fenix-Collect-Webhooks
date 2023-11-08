@@ -39,7 +39,7 @@ They payload is JSON
 | `uuid`        | `string`              | UUID V4                                                      |
 | `name`        | `string`              | Named aimed towards prospect                                 |
 | `ssn`         | `string`              | Social security number, `YYYYMMDDXXXX`                       |
-| `external_id` | `string` `(nullable)` |                                                              |
+| `external_id` | `string` `(nullable)` | The customers CRM system ID. Manually inserted by Fenix Collect users and is not guaranteed to be correct |
 | `phone`       | `string` `(nullable)` |                                                              |
 | `email`       | `string` `(nullable)` |                                                              |
 | `created_at`  | `string`              | ISO 8601. When the contact was created in the database, not when it was converted |
