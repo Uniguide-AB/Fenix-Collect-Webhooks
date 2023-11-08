@@ -4,14 +4,14 @@
 
 ### Process
 
-1. A contact conversion is completed by the prospect *(agreement has been signed with BankId)*
-2. Fenix Collect will send a payload to the registered URL(s) for the customer
-2. Each webhook request assumes a status code of 2xx to be returned
+1. A contact conversion is completed by the prospect *(agreement has been signed with BankId)*.
+2. Fenix Collect will send a payload to the registered URL(s) for the customer.
+2. Each webhook request assumes a status code of 2xx to be returned.
 
 
 ### The Payload
 
-They payload is JSON
+They payload is JSON and we are able to provide custom headers with the payload.
 
 
 #### The body
@@ -55,7 +55,6 @@ They payload is JSON
 | `frequency`      | `string` `(nullable)` | free text. How often money may be withdrawn, if null the default should be considered monthly. |
 
 #### Payload example
-
 ```json
 {
   "payload_generated_at": "2023-11-08T22:31:13+01:00",
