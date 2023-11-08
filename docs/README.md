@@ -45,6 +45,7 @@ They payload is JSON
 | `created_at`  | `string`              | ISO 8601. When the contact was created in the database, not when it was converted |
 
 #### <a name="bank_details"></a> [bank_details](#bank_details)  
+
 | Field            | Type                  | Remarks                                                      |
 | ---------------- | --------------------- | ------------------------------------------------------------ |
 | `name`           | `string`              | UUID V4                                                      |
@@ -52,7 +53,9 @@ They payload is JSON
 | `account`        | `string`              | Social security number, `YYYYMMDDXXXX`                       |
 | `amount_to_give` | `string` `numeric`    | No fractions                                                 |
 | `frequency`      | `string` `(nullable)` | free text. How often money may be withdrawn, if null the default should be considered monthly. |
+
 #### Payload example
+
 ```json
 {
   "payload_generated_at": "2023-11-08T22:31:13+01:00",
