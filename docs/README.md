@@ -37,7 +37,8 @@ They payload is JSON and we are able to provide custom headers with the payload.
 | Field         | Type                  | Remarks                                                      |
 | ------------- | --------------------- | ------------------------------------------------------------ |
 | `uuid`        | `string`              | UUID V4                                                      |
-| `name`        | `string`              | Named aimed towards prospect                                 |
+| `name`        | `string`              | Name of contact                                              |
+| `last_name`   |`string` `(nullable)`  | Last name of contact (campaign setting)                      |
 | `ssn`         | `string`              | Social security number, `YYYYMMDDXXXX`                       |
 | `external_id` | `string` `(nullable)` | The customers CRM system ID. Manually inserted by Fenix Collect users and is not guaranteed to be correct |
 | `phone`       | `string` `(nullable)` |                                                              |
@@ -66,6 +67,7 @@ They payload is JSON and we are able to provide custom headers with the payload.
   "contact": {
     "uuid": "9a9114a5-83df-48b0-9306-40d744e65cc0",
     "name": "My Möller",
+    "last_name": null,
     "ssn": "196702107787",
     "external_id": "1234567",
     "phone": "+16466637874",
