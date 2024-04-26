@@ -29,7 +29,7 @@ They payload is JSON and we are able to provide custom headers with the payload.
 | Field           | Type     | Remarks               |
 | --------------- | -------- | --------------------- |
 | `uuid`          | `string` | UUID V4               |
-| `name`          | `string` | Named of the prospect |
+| `name`          | `string` | Name for public view  |
 | `internal_name` | `string` | Name for internal use |
 
 #### <a name="contact"></a> [contact](#contact)  
